@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram by Mantas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="page-cont">
+        <header>
+            <nav class="nav-cont" id="nav-cont" style="height: 77px;">
+                <!-- insta icon/vertical line icon/ text:Instagran -->
+                <div class="insta-logo-block">
+                    <div class="insta-logo">
+                        <i class="fab fa-2x fa-instagram"></i>
+                    </div>
+                    <div class="vertical-line" id="vertical-line" style="transition: .3s; opacity: 1;"></div>
+                    <div class="text-instagram" id="text-instagram" style="transition: .3s; opacity: 1;"
+                        class="hidden-insta">
+                        Instagram
+                    </div>
+                </div>
+                <!-- search button/icon -->
+                <div class="search">
+                    <button class="btn-search">
+                        <i class="fa fa-search search-icon"></i>
+                        Search
+                    </button>
+                </div>
+                <!-- explore icon, heart icon, log in icon -->
+                <div class="right-icons">
+                    <div class="explore-icon">
+                        <i class="far fa-compass social-icons-m-size"></i>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="far fa-heart social-icons-m-size"></i>
+                    </div>
+                    <div class="log-in-icon">
+                        <i class="far fa-user social-icons-m-size"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="main-cont">
+            <!-- user image, user name in top container -->
+            <div class="top-cont">
+                <div class="user-img">
+                    <img class="inner-user-img" src="car_image.jpg" alt="" srcset="">
+                </div>
+                <div class="user-name">huffpost</div>
+            </div>
+            <!-- only image -->
+            <div class="img-cont">
+                <img class="img-post" src="car_image.jpg" alt="" srcset="" width="634px">
+            </div>
+
+            <div class="bottom-cont">
+                <!-- heart icon, comment icon, save for later icon -->
+                <div class="icons-cont">
+                    <!-- push like, heart icon -->
+                    <div class="heart-comment-cont">
+                        <div class="heart-icon">
+                            <i type="button" onclick="changeColor()" id="heart-in"
+                                class="heart-in color-black far fa-heart social-icons-m-size like-heart"></i>
+                        </div>
+                        <div class="comment-icon">
+                            <i class="far fa-comment social-icons-m-size"></i>
+                        </div>
+                    </div>
+                    <!-- save icon -->
+                    <div class="save-icon">
+                        <i class="far fa-bookmark social-icons-m-size"></i>
+                    </div>
+                </div>
+                <!-- shows how mutch likes does this post have -->
+                <div id="likes-cont" class="likes-cont">
+                    0 likes
+                </div>
+                <p id="new-comment"></p>
+                <!-- shows written comments on this post -->
+                <div class="comment-cont"></div>
+                <!-- push here to add a new comment -->
+                <div class="add-comment-cont">
+                    <div class="add-comment" onclick="focusComment()">
+                        <input id="input-comment" class="input-comment" onkeypress="enterUserName()"
+                            placeholder="Add a comment..." type="text">
+                    </div>
+                    <div class="icon-more">
+                        <i class="fas fa-ellipsis-h social-icons-m-size"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/f4992b70e2.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

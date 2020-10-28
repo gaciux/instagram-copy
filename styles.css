@@ -1,0 +1,166 @@
+body {
+  padding-bottom: 20%;
+  font-family: "Pacifico", cursive;
+  background-color: #fafafa;
+  margin: 0;
+}
+
+.page-cont {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  position: fixed;
+  background: #ffffff;
+  width: 100vw;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+
+.vertical-line {
+  height: 30px;
+  width: 1px;
+  background-color: black;
+  margin: 0 20px;
+}
+
+.text-instagram {
+  font-size: 25px;
+}
+
+.insta-logo-block {
+  display: flex;
+  align-items: center;
+  margin: 0 25px 0 30px;
+  padding: 15px;
+}
+
+.nav-cont {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 900px;
+  justify-content: space-between;
+  transition: height 0.3s;
+}
+
+.btn-search {
+  border: 1px solid #dbdbdb;
+  background: #fafafa;
+  font-size: 15px;
+  width: 220px;
+  height: 30px;
+  color: lightgrey;
+}
+
+.right-icons {
+  display: flex;
+  font-size: 25px;
+  width: 150px;
+  justify-content: space-between;
+  padding-left: 15px;
+}
+
+.top-cont {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+}
+
+.main-cont {
+  max-width: 634px;
+  border: 1px solid #dbdbdb;
+  margin-top: 140px;
+  width: 100%;
+}
+
+.user-img {
+  width: 32px;
+  height: 32px;
+  border: 2px solid lightsalmon;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.inner-user-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 12px;
+  border: 1px solid #ffffff;
+}
+
+.icons-cont {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+}
+
+.heart-comment-cont {
+  display: flex;
+  cursor: pointer;
+}
+
+.bottom-cont {
+  padding: 0 16px;
+  font-family: Merriweather, serif;
+}
+
+.heart-icon {
+  margin-right: 8px;
+}
+
+.likes-cont {
+  margin: 8px 0;
+  font-weight: 900;
+}
+
+.add-comment-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  line-height: 56px;
+  border-top: 1px solid #efefef;
+}
+
+.input-comment {
+  border: none;
+  height: 18px;
+  font-size: 16px;
+  margin-right: 8px;
+  flex: 1;
+  background: inherit;
+  width: 550px;
+  padding: 0;
+}
+
+.icon-more {
+  font-size: 24px;
+}
+
+.hidden-insta {
+  opacity: 0;
+  display: none;
+}
+
+/* this class is for heart icon */
+.color-black {
+  color: black;
+}
+
+.color-red {
+  color: red;
+}
+
+@media screen and (max-width: 776px) {
+  .search {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
